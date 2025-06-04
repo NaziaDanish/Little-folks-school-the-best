@@ -1,0 +1,181 @@
+ body {
+   font-family: 'Segoe UI', sans-serif;
+   background-color: #f8f9fa;
+ }
+
+ .header-section {
+   background-color: #f8f9fa;
+   padding: 2rem 1rem;
+   text-align: center;
+   position: relative;
+ }
+
+ .header-title {
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: #b30000;
+   animation: fadeInDown 1s ease-in-out;
+ }
+
+ .header-subtitle {
+   font-size: 1.25rem;
+   font-weight: 500;
+   margin-bottom: 1rem;
+   animation: fadeInUp 1.5s ease-in-out;
+ }
+
+ .btn-enroll {
+   background-color: #b30000;
+   color: white;
+   border: none;
+   padding: 0.6rem 1.5rem;
+   font-size: 1rem;
+   transition: background-color 0.3s;
+ }
+
+ .btn-enroll:hover {
+   background-color: #800000;
+ }
+
+ .school-logo {
+   width: 100px;
+ }
+
+ @keyframes fadeInDown {
+   from {
+     opacity: 0;
+     transform: translateY(-30px);
+   }
+
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+
+ @keyframes fadeInUp {
+   from {
+     opacity: 0;
+     transform: translateY(30px);
+   }
+
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+
+ .nav-item {
+   display: inline-block;
+   color: white;
+   text-decoration: none;
+   font-size: 1rem;
+ }
+
+ .navbar-nav {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   gap: 30px;
+ }
+
+ .nav-item a {
+   color: white;
+   text-decoration: none;
+   font-size: 1.2rem;
+   transition: background-color 0.3s ease, color 0.3s ease;
+ }
+
+ .nav-item a:hover {
+   background-color: rgba(255, 255, 255, 0.2);
+   color: #fff;
+ }
+
+ .btn-maroon {
+   background-color: maroon;
+   color: white;
+   border: none;
+   transition: 0.3s ease;
+ }
+
+ .btn-maroon:hover {
+   background-color: white;
+   color: maroon;
+   border: 1px solid maroon;
+ }
+
+ .text-maroon {
+  color: #800000;
+}
+
+.bg-maroon {
+  background-color: #800000;
+}
+
+.btn:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+
+ .butterfly-container {
+   position: relative;
+   width: 100%;
+   height: 100px;
+   overflow: hidden;
+ }
+
+ .butterfly {
+   position: absolute;
+   left: -100px;
+   top: 10px;
+   width: 80px;
+   animation: flyAcross 10s linear infinite;
+ }
+
+ @keyframes flyAcross {
+   0% {
+     transform: translateX(0) rotate(0deg);
+   }
+
+   50% {
+     transform: translateX(50vw) translateY(-20px) rotate(15deg);
+   }
+
+   100% {
+     transform: translateX(100vw) rotate(0deg);
+   }
+ }
+
+ @media (max-width: 992px) {
+   .gif-header {
+     height: 60vh !important;
+   }
+
+   .card-img {
+     height: auto !important;
+   }
+
+   .navbar-nav {
+     gap: 10px;
+   }
+
+   .nav-item {
+     margin: 0;
+   }
+ }
+
+ footer p {
+   font-size: 0.9rem;
+ }
+
+ .btn-maroon {
+   padding: 0.5rem 1rem;
+ }
+
+ .footer .col-lg-4 {
+   text-align: center !important;
+ }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Staff - The Little Folks School</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .gif-header {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .staff-card {
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .staff-card:hover {
+            transform: scale(1.03);
+        }
+
+        .staff-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .back-btn {
+            background-color: maroon;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .back-btn:hover {
+            background-color: white;
+            color: maroon;
+            border: 1px solid #800000;
+        }
+    </style>
+</head>
+
+<body>
+     <div class="header-image">
+        <img src="assets/header sectin.gif" alt="School Header" class="gif-header">
+    </div>
+
+    <div class="container py-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Our Dedicated Staff</h2>
+            <p class="text-muted">Meet the passionate and qualified educators who make learning joyful!</p>
+        </div>
+
+        <div class="row g-4">
+
+            
+            <div class="col-md-4">
+                <div class="card staff-card">
+                    <img src="images/staff1.jpg" alt="Teacher 1" class="staff-img">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mrs. Ayesha Khan</h5>
+                        <p class="card-text">Principal</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card staff-card">
+                    <img src="images/staff2.jpg" alt="Teacher 2" class="staff-img">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mr. Imran Shaikh</h5>
+                        <p class="card-text">Math Teacher</p>
+                    </div>
+                </div>
+            </div>
+
+          
+            <div class="col-md-4">
+                <div class="card staff-card">
+                    <img src="images/staff3.jpg" alt="Teacher 3" class="staff-img">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ms. Sara Malik</h5>
+                        <p class="card-text">Science Teacher</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="text-center mt-5">
+            <a href="index.html" class="back-btn">Back to Home</a>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
