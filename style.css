@@ -20,6 +20,27 @@ body {
    object-fit: inherit;
    z-index: -1;
  }
+ 
+
+@media (max-width: 575.98px) {
+  header {
+    height: 60vh;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  header {
+    height: 80vh; 
+  }
+}
+
+
+@media (min-width: 992px) {
+  header {
+    height: 100vh; 
+  }
+}
 
  .navbar-custom {
    background-color: #b31720;
@@ -411,3 +432,4 @@ body {
 .location-btn i {
   font-size: 20px;
 }
+
