@@ -1,92 +1,55 @@
 body {
-
-   font-family: 'Segoe UI', sans-serif;
- }
-
- header {
-   position: relative;
-   width: 100%;
-   height: 100vh;
-   overflow: hidden;
-   color: white;
- }
-
- header video {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   object-fit: inherit;
-   z-index: -1;
- }
- 
-
-@media (max-width: 575.98px) {
-  header {
-    height: 60vh;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-
-@media (min-width: 576px) and (max-width: 991.98px) {
-  header {
-    height: 80vh; 
-  }
+.navbar-custom {
+  background-color: #b31720;
+  border: white 1px solid;
+  padding: 10px 20px;
+  margin: 20px 0;
 }
 
-
-@media (min-width: 992px) {
-  header {
-    height: 100vh; 
-  }
+.school-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 10px;
 }
 
- .navbar-custom {
-   background-color: #b31720;
-   border: white 1px solid;
-   padding: 10px 20px;
-   margin: 20px 0;
- }
+.logo-img {
+  height: 50px;
+  width: auto;
+}
 
- .school-brand {
-   font-weight: bold;
-   font-size: 1.2rem;
-   color: white;
-   margin-left: 10px;
- }
+.navbar-toggler {
+  border: none;
+}
 
- .logo-img {
-   height: 50px;
-   width: auto;
- }
+.navbar-nav .nav-link {
+  color: white;
+}
 
- .navbar-toggler {
-   border: none;
- }
+.navbar-nav .nav-link:hover {
+  color: red;
+}
 
- .navbar-nav .nav-link {
-   color: white;
- }
+.welcome-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f8f9fa;
+}
 
- .navbar-nav .nav-link:hover {
-   color: red;
- }
+.welcome-section h2 {
+  font-size: 2.5rem;
+  color: #b30000;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
 
- .welcome-section {
-   padding: 60px 20px;
-   text-align: center;
-   background: #f8f9fa;
- }
-
- .welcome-section h2 {
-   font-size: 2.5rem;
-   color: #b30000;
-   margin-bottom: 30px;
-   font-weight: bold;
- }
-
- .welcome-section h2 {
+.welcome-section h2 {
   font-size: 2rem;
   margin-bottom: 30px;
   color: #333;
@@ -108,7 +71,7 @@ body {
   height: 270px;
   padding: 15px;
   position: relative;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease-in-out;
   animation: moveCard 4s infinite alternate ease-in-out;
   display: flex;
@@ -144,18 +107,43 @@ body {
 }
 
 
-.btn.red { background-color: #e74c3c; }
-.btn.blue { background-color: #3498db; }
-.btn.green { background-color: #27ae60; }
-.btn.orange { background-color: #f39c12; }
+.btn.red {
+  background-color: #e74c3c;
+}
+
+.btn.blue {
+  background-color: #3498db;
+}
+
+.btn.green {
+  background-color: #27ae60;
+}
+
+.btn.orange {
+  background-color: #f39c12;
+}
 
 
 @keyframes moveCard {
-  0% { transform: translate(0px, 0px); }
-  25% { transform: translate(-5px, 10px); }
-  50% { transform: translate(10px, -5px); }
-  75% { transform: translate(-10px, -10px); }
-  100% { transform: translate(0px, 5px); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  25% {
+    transform: translate(-5px, 10px);
+  }
+
+  50% {
+    transform: translate(10px, -5px);
+  }
+
+  75% {
+    transform: translate(-10px, -10px);
+  }
+
+  100% {
+    transform: translate(0px, 5px);
+  }
 }
 
 
@@ -210,14 +198,14 @@ body {
 .about-text h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color:  rgb(110, 9, 9);
+  color: rgb(110, 9, 9);
 }
 
 .about-text p {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 15px;
-  color:  rgb(110, 9, 9);
+  color: rgb(110, 9, 9);
 }
 
 .about-image {
@@ -237,6 +225,7 @@ body {
   .about-content {
     flex-direction: column-reverse;
     text-align: center;
+    gap: 0;
   }
 
   .about-text h2 {
@@ -247,7 +236,8 @@ body {
     font-size: 1rem;
   }
 }
- 
+
+
 
 
 
@@ -272,8 +262,13 @@ body {
 
 
 @keyframes blinkText {
-  0% { opacity: 1; }
-  100% { opacity: 0.3; }
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
 }
 
 
@@ -386,8 +381,13 @@ body {
 
 
 @keyframes blink {
-  0% { opacity: 1; }
-  100% { opacity: 0.4; }
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.4;
+  }
 }
 
 @media (max-width: 768px) {
@@ -401,6 +401,7 @@ body {
     margin: 5px 0;
   }
 }
+
 .location-btn-container {
   position: fixed;
   right: 20px;
@@ -433,3 +434,23 @@ body {
   font-size: 20px;
 }
 
+.text-center {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.btn-custom {
+  background-color: #b30000;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-custom a:hover {
+  background-color: #990000;
+  transform: scale(1.05);
+}
